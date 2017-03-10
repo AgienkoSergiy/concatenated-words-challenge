@@ -28,7 +28,6 @@ public class ChallengeSolver {
     private String pathToWordsFile;
 
 
-
     /**
      * Constructor.
      *
@@ -54,13 +53,14 @@ public class ChallengeSolver {
 
 
     /**
-     * Actually solves the challenge.
+     * Populates class fields with data. Actually solves the challenge.
      */
     public void solveTheChallenge(){
 
         List<String> conatenatedWords =
                 getConcatenatedWords(getWordsListFromFile(pathToWordsFile));
 
+        //checking if there are any results
         if(!conatenatedWords.isEmpty()){
             concatWordsCount = conatenatedWords.size();
             String longestWord = conatenatedWords.get(concatWordsCount-1);
@@ -68,7 +68,7 @@ public class ChallengeSolver {
             int longestWordLength = longestWord.length();
             int secondLongestWordLength=0;
 
-
+            //filling the results
             for(int i = conatenatedWords.size()-1;i>=0;i--){
                 String word = conatenatedWords.get(i);
 
