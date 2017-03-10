@@ -1,6 +1,5 @@
 # concatenated-words-challenge
 
-#Notebook
 ###This project is used to find the first longest concatenated word(s),
  the second-longest concatenated word(s) and the total count of concatenated words in a file.
 ======================================
